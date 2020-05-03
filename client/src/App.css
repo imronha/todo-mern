@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inputDiv {
+  width: 85%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  height: 40px;
+  width: 400px;
+  border: none;
+  border-bottom: 2px #101113 solid;
+  background: none;
+  font-size: 1.5rem;
+  color: #787a80;
+  padding-right: 25px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 25%;
+  height: 45px;
+  border: none;
+  font-size: 25px;
+  background: #101113;
+  border-radius: 5px;
+  color: #787a80;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 15px;
+  background: #3a3a3a;
+  border-radius: 5px;
+  width: 85%;
+  display: block;
+}
+
+li {
+  padding: 15px;
+  font-size: 1.5rem;
+  background: #282c34;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* li button {
+  position: relative;
+  margin-left: 100%;
+} */
+
+@media only screen and (min-width: 300px) {
+  .App {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .App {
+    width: 80%;
+  }
+
+  input {
+    width: 50%;
+  }
+
+  button {
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+}
